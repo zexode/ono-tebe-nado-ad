@@ -290,3 +290,244 @@
   width: 48px;
   height: 48px;
 }
+
+
+@media (max-width: 900px) {
+  .header {
+    min-height: 0;
+    padding: 40px 24px;
+    grid-template-columns: minmax(0, 1fr) auto;
+    grid-template-areas:
+      "logo contact"
+      "menu menu";
+    row-gap: 30px;
+  }
+
+  .header__logo {
+    grid-area: logo;
+  }
+
+  .header .address {
+    grid-area: contact;
+  }
+
+  .menu {
+    grid-area: menu;
+  }
+
+  .menu__list {
+    justify-content: center;
+  }
+
+  .cover {
+    min-height: 650px;
+    padding: 120px 40px 40px;
+  }
+
+  .cover__description {
+    margin-top: 80px;
+  }
+
+  .lots__list {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .lots__item {
+    min-height: 400px;
+  }
+
+  .lot__link {
+    padding: 30px;
+  }
+
+  .about {
+    grid-template-columns: 240px minmax(0, 1fr);
+  }
+
+  .about__logo {
+    width: 200px;
+    height: 200px;
+  }
+
+  .about__content {
+    padding-top: 60px;
+  }
+
+  .about__title {
+    margin-bottom: 60px;
+  }
+
+  .socials {
+    gap: 20px;
+  }
+}
+
+@media (max-width: 640px) {
+  body {
+    font-size: 16px;
+  }
+
+  .header {
+    width: calc(100% - 32px);
+    padding: 32px 0;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "logo"
+      "contact"
+      "menu";
+    justify-items: center;
+    row-gap: 24px;
+  }
+
+  .header__logo {
+    justify-self: center;
+  }
+
+  .header .address {
+    width: auto;
+    align-items: center;
+    text-align: center;
+  }
+
+  .menu__list {
+    gap: 10px 20px;
+  }
+
+  .menu__link {
+    font-size: 16px;
+  }
+
+  .cover {
+    width: calc(100% - 32px);
+    min-height: 620px;
+    padding: 100px 24px 24px;
+  }
+
+  .cover__title {
+    gap: 20px;
+    font-size: clamp(44px, 12vw, 72px);
+    letter-spacing: 0.18em;
+  }
+
+  .cover__description {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 24px;
+    margin-top: 60px;
+  }
+
+  .cover__description p {
+    font-size: 18px;
+    word-spacing: 10px;
+  }
+
+  .lots {
+    width: calc(100% - 32px);
+    margin-top: 100px;
+  }
+
+  .lots__title {
+    margin: 0 0 20px 8px;
+    font-size: 32px;
+  }
+
+  .lots__list {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .lots__item {
+    min-height: 360px;
+  }
+
+  .lot__link {
+    padding: 28px;
+  }
+
+  .lot__title {
+    font-size: 20px;
+  }
+
+  .lot__text {
+    font-size: 16px;
+  }
+
+  .lots__more {
+    margin: 24px 0 0 8px;
+    font-size: 18px;
+  }
+
+  .about {
+    width: calc(100% - 32px);
+    margin-top: 100px;
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .about__logo {
+    width: 180px;
+    height: 180px;
+  }
+
+  .about__logo img {
+    width: 120px;
+  }
+
+  .about__content {
+    padding-top: 0;
+  }
+
+  .about__title {
+    margin-bottom: 32px;
+    font-size: 32px;
+  }
+
+  .about__text {
+    gap: 18px;
+    font-size: 17px;
+  }
+
+  .footer {
+    width: calc(100% - 32px);
+    margin: 100px auto 40px;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    gap: 32px;
+  }
+
+  .footer__address {
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer__menu {
+    font-size: 16px;
+  }
+
+  .socials {
+    justify-self: center;
+    gap: 28px;
+  }
+
+  .socials img {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+@media (max-width: 400px) {
+  .cover {
+    min-height: 560px;
+    padding: 80px 16px 20px;
+  }
+
+  .cover__title {
+    font-size: 42px;
+    letter-spacing: 0.12em;
+  }
+
+  .cover__description p {
+    font-size: 16px;
+    word-spacing: 6px;
+  }
+}
