@@ -2,9 +2,46 @@
 <html lang="ru">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Аукцион вещей, в которые никто не верил." />
     <title>Оно тебе надо — аукцион вещей, в которые никто не верил</title>
+    <link rel="stylesheet" href="fonts/fonts.css" />
+    <link rel="stylesheet" href="styles/global.css" />
+    <link rel="stylesheet" href="styles/style.css" />
   </head>
-  <body></body>
+  <body>
+    <header class="header" id="top">
+      <nav class="menu" aria-label="Основная навигация">
+        <ul class="menu__list">
+          <li class="menu__item"><a class="menu__link menu__link_active" href="#top">главная</a></li>
+          <li class="menu__item"><a class="menu__link" href="#lots">посмотреть лоты</a></li>
+          <li class="menu__item"><a class="menu__link" href="#about">об аукционе</a></li>
+        </ul>
+      </nav>
+      <a class="header__logo" href="#top" aria-label="На главную">
+        <img src="images/logo-black.svg" alt="Логотип «Оно тебе надо»" />
+      </a>
+      <address class="address">
+        <a href="tel:+99995555555">+9 999 555 5555</a>
+        <a href="mailto:info@sobaka.ge">info@sobaka.ge</a>
+        <span>наб. Принсенграхт 263-265, Амстердам</span>
+      </address>
+    </header>
+
+    <main>
+      <section class="cover" aria-labelledby="cover-title">
+        <div class="cover__content">
+          <h1 class="cover__title" id="cover-title">
+            <span class="cover__title-word">ОНО</span>
+            <span class="cover__title-word cover__title-word_center">ТЕБЕ</span>
+            <span class="cover__title-word cover__title-word_right">НАДО</span>
+          </h1>
+          <div class="cover__description">
+            <p>АУКЦИОН ВЕЩЕЙ, В КОТОРЫЕ НИКТО НЕ ВЕРИЛ</p>
+            <a class="cover__button" href="#lots">СДЕЛАТЬ СТАВКУ</a>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
 </html>
